@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-list {
+  display: flex;
+  padding: 0;
+  margin: auto 16px;
+}
+.menu-item {
+  margin: 0 4px;
+  display: inline-block;
+}
