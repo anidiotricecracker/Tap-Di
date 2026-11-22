@@ -1,0 +1,37 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  transform: scale(1.05);
+}
+.menu-list {
+  display: flex;
+  padding: 0;
+  margin: auto 16px;
+}
+.menu-item {
+  margin: 0 8px;
+  list-style: none;
+}
+.sach {
+  width: 100%;
+  max-width: 260px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sach-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;          /* Khung vuông đồng bộ cho cả danh sách */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;                /* Khoảng thở để sản phẩm không dính mép */
+}
+
+.sach-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;          /* Luôn thấy toàn bộ sản phẩm, không bị cắt */
+  transition: transform 0.3s ease;
+}

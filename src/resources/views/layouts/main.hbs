@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tập Đi</title>
+
+    <!-- Nhúng file CSS đã biên dịch vào đây -->
+    <link rel="stylesheet" href="/css/headerstyle.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Gọi phần Header dùng chung từ thư mục partials -->
+        {{> header}}
+
+        <div class="container">
+            <!-- Nơi nội dung của trang home.hbs hoặc news.hbs sẽ được đổ vào đây -->
+            {{{body}}}
+        </div>
+
+        <!-- Gọi phần Footer dùng chung từ thư mục partials -->
+        {{> footer}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Sách Trực Tuyến</title>
+</head>
+<body>
+    <h1>Danh sách Sách trong Cửa Hàng</h1>
+    <hr>
+
+    {{#each books}}
+        <div>
+            <h3>{{this.title}}</h3>
+            <p>Tác giả: {{this.author}}</p>
+            <p>Giá bán: {{this.price}} VNĐ</p>
+            <p>Danh mục: {{this.category_name}}</p>
+        </div>
+        <hr>
+    {{else}}
+        <p>Chưa có cuốn sách nào trong cửa hàng</p>
+    {{/each}}
+</body>
+</html>
