@@ -33,3 +33,5 @@ INSERT INTO books (title, author, price, description, category_id) VALUES
 ('Nhà Giả Kim', 'Paulo Coelho', 79000, 'Hành trình theo đuổi vận mệnh của chàng chăn cừu Santiago.', 2),
 ('Đắc Nhân Tâm', 'Dale Carnegie', 86000, 'Nghệ thuật thu phục lòng người kinh điển.', 3),
 ('Sách chưa phân loại', 'Tác giả ẩn danh', 50000, 'Dùng để test chức năng LEFT JOIN khi category_id bị NULL.', NULL);
+USE bookstore_db;
+ALTER TABLE books ADD COLUMN stock INT NOT NULL DEFAULT 10;
