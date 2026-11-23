@@ -18,7 +18,10 @@ app.engine(
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "resources", "views"));
 const indexRouter = require("./routes/index");
+const bookRoutes = require('./routes/bookRoutes');
 app.use("/", indexRouter);
+app.use('/books', bookRoutes);
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
