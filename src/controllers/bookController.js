@@ -1,3 +1,4 @@
+// Điều phối Chi tiết sách
 const bookModel = require("../models/bookModel");
 const getBookDetail = async function (req, res) {
   try {

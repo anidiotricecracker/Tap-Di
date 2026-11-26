@@ -6,6 +6,15 @@
   </head>
   <body>
     <h1>Danh sách Sách trong Cửa Hàng</h1>
+    <div>
+      <span>Danh mục: </span>
+      {{#each categories}}
+        |
+        <a href="/?category={{this.id}}">{{this.name}}</a>
+      {{/each}}
+        |
+    </div>
+
     <hr />
 
     {{#each books}}
@@ -19,7 +28,7 @@
       </div>
       <hr />
     {{else}}
-      <p>Chưa có cuốn sách nào trong cửa hàng</p>
+      <p>Không tìm thấy cuốn sách nào phù hợp</p>
     {{/each}}
   </body>
 </html>

@@ -1,3 +1,4 @@
+//Cấu hình kết nối CSDL
 const mysql = require("mysql2/promise");
 const pool = mysql.createPool({
   host: "localhost",
